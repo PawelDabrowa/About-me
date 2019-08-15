@@ -1,0 +1,37 @@
+section {
+    height: 100vh;
+    margin: 0 auto;
+    position: sticky;
+
+    &.slogan {
+
+        text-align: center;
+        background-image: url(../img/coding.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+
+        .bg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 63, 114, 0.5);
+            height: 100%;
+
+            h3 {
+                padding: 10px;
+                font-size: 40px;
+                line-height: 50px;
+                color: white;
+
+                @include mob(768) {
+
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+    }
+}

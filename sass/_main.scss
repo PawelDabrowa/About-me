@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'saira', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section {
+    &.stick {
+        position: sticky;
+        width: 100%;
+        height: 100vh;
+        // line-height: 10vh;
+
+        @include mob(1024) {
+            top: 0;
+        }
+    }
+
+    .sticky-title {
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        line-height: 10vh;
+        z-index: 2;
+
+        h3 {
+            background-color: white;
+            color: black;
+            font-size: 35px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
